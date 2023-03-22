@@ -24,11 +24,11 @@
 
                 &:hover,
                 &:active {
-                    color: $primary;
+                    color: #ffdd60;
                 }
 
                 &.active {
-                    color: $primary !important;
+                    color: #ffdd60 !important;
                 }
             }
         }
@@ -43,7 +43,7 @@
             color: fade-out($white, 0.3);
 
             &:hover {
-                color: $white;
+                color: #ffdd60;
             }
         }
 
@@ -54,7 +54,7 @@
                     padding: 0 1rem;
 
                     &:hover {
-                        color: $white;
+                        color: #ffdd60;
                     }
                 }
 
@@ -75,7 +75,7 @@
                 color: $gray-900;
 
                 &:hover {
-                    color: $primary;
+                    color: #ffdd60;
                 }
             }
 
@@ -85,7 +85,7 @@
                         color: $gray-900;
 
                         &:hover {
-                            color: $primary;
+                            color:#ffdd60;
                         }
                     }
                 }
