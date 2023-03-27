@@ -2558,6 +2558,10 @@ textarea.form-control-lg {
   margin-right: 1rem;
 }
 
+#button-leia-mais:hover{
+background-color: #57a730;
+}
+
 .btn-check {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -11317,6 +11321,7 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+  transition: all 1s;
 }
 
 hr.divider {
@@ -11352,7 +11357,7 @@ hr.divider-light {
   color: #f4623a;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: #57A730 !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -11380,10 +11385,10 @@ hr.divider-light {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #212529;
+    color: #ffdd60;
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #f4623a;
+    color: #ffdd60;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
     color: #212529;
