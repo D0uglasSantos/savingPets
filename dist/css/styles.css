@@ -89,6 +89,22 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.flutuar {
+  animation: flutuar 2s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-15px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}   
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -236,7 +252,7 @@ sup {
 }
 
 a {
-  color: #ffdd60;
+  color: #000000;
   text-decoration: underline;
 }
 a:hover {

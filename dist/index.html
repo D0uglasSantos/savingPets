@@ -19,6 +19,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/fd389f0d5b.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -68,7 +70,7 @@
                      <p class="text-dark-75 text-justify mb-4" style="text-align: justify;">
                     Diante disso, esse site foi criado para ajudarmos esses <strong>seres vivos</strong> a terem condições melhores em suas vidas. Temos um sistema de <strong>DENÚNCIAS</strong> no qual você pode fazer uma descrição do local e do que sabe a respeito, assim facilitando o resgate e até a rapidez do atendimento em caso de urgência.<br><strong><h5>Não deixe pra amanhã o pet que você pode salvar hoje!</h5></strong>
                      </p>
-                    <a class="btn btn-light btn-xl" id="button-leia-mais" href="#services">Veja como fazer uma denúncia</a>
+                    <a class="btn btn-light btn-xl" id="button-leia-mais" href="#denuncias">Denuncie agora!</a>
                 </div>
             </div>
         </div>
@@ -81,29 +83,29 @@
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                        <div class="mb-4 flutuar"><img src="/src/assets/img/img_saving_pets/1.svg" alt=""></div>
                         <h3 class="h4 mb-2">Acesse a página "Denúncias"</h3>
                         <!-- <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                        <div class="mb-4 flutuar"><img src="/src/assets/img/img_saving_pets/2.svg" alt=""></div>
                         <h3 class="h4 mb-2">Preencha os espaços com o que se pede</h3>
                         <!-- <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                        <div class="mb-4 flutuar"><img src="/src/assets/img/img_saving_pets/3.svg" alt=""></div>
                         <h3 class="h4 mb-2">Clique no botão enviar para registrar sua denúncia</h3>
                         <!-- <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Aguarde a equipe entrar em contato com!</h3>
+                        <div class="mb-4 flutuar"><img src="/src/assets/img/img_saving_pets/4.svg" alt=""></div>
+                        <h3 class="h4 mb-2">Aguarde a equipe entrar em contato!</h3>
                         <!-- <p class="text-muted mb-0">Is it really open source if it's not made with love?</p> -->
                     </div>
                 </div>
@@ -203,33 +205,42 @@
                             <input class="form-control" id="name" type="text" placeholder="Enter your name..."
                                 data-sb-validations="required" />
                             <label for="name">Nome Completo</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Um nome é obrigatório.</div>
                         </div>
                         <!-- Email address input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="email" type="email" placeholder="name@example.com"
                                 data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            <label for="email">Endereço de email</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Um email é obrigatório.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">O email não é válido.</div>
                         </div>
                         <!-- Phone number input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                            <input class="form-control" id="phone" type="tel" placeholder="(61) 96578-6786"
                                 data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            <label for="phone">Número de telefone</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">Um número de telefone é obrigatório
                             </div>
                         </div>
-                        <!-- Message input-->
+                        <!-- CPF input-->
                         <div class="form-floating mb-3">
+                            <input class="form-control" id="cpf" type="cpf" placeholder="099.161.877-87"
+                                data-sb-validations="required,cpf" />
+                            <label for="cpf">CPF</label>
+                            <div class="invalid-feedback" data-sb-feedback="cpf:required">Um CPF é obrigatório.</div>
+                            <div class="invalid-feedback" data-sb-feedback="cpf:cpf">O CPF não é válido.</div>
+                        </div>
+
+                        <!-- Message input-->
+                        <!-- <div class="form-floating mb-3">
                             <textarea class="form-control" id="message" type="text"
                                 placeholder="Enter your message here..." style="height: 10rem"
                                 data-sb-validations="required"></textarea>
                             <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Uma mensagem é Obrigatória.
                             </div>
-                        </div>
+                        </div> -->
                         <!-- Submit success message-->
                         <!---->
                         <!-- This is what your users will see when the form-->
@@ -237,7 +248,6 @@
                         <div class="d-none" id="submitSuccessMessage">
                             <div class="text-center mb-3">
                                 <div class="fw-bolder">Formulário enviado com sucesso!</div>
-                                To activate this form, sign up at
                                 <br />
                                 <a
                                     href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>

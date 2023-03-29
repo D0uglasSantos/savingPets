@@ -201,9 +201,9 @@ html(lang='en')
                                 )
                                 label(for='email') Email address
                                 .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
+                                    | Um email é obrigatório.
                                 .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
+                                    | Email não é válido.
 
                             // Phone number input
                             .form-floating.mb-3
@@ -216,17 +216,31 @@ html(lang='en')
                                 .invalid-feedback(data-sb-feedback='phone:required')
                                     | A phone number is required.
 
-                            // Message input
+                            // cpf address input
                             .form-floating.mb-3
-                                textarea#message.form-control(
-                                    type='text',
-                                    placeholder='Enter your message here...',
-                                    style='height: 10rem;',
-                                    data-sb-validations='required'
+                                input#cpf.form-control(
+                                    type='cpf',
+                                    placeholder='099.161.877-87',
+                                    data-sb-validations='required,cpf'
                                 )
-                                label(for='message') Message
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
+                                label(for='cpf') CPF address
+                                .invalid-feedback(data-sb-feedback='cpf:required')
+                                    | Um CPF é obrigatório.
+                                .invalid-feedback(data-sb-feedback='cpf:cpf')
+                                    | CPF não é válido.
+
+
+                            //- // Message input
+                            //- .form-floating.mb-3
+                            //-     textarea#message.form-control(
+                            //-         type='text',
+                            //-         placeholder='Enter your message here...',
+                            //-         style='height: 10rem;',
+                            //-         data-sb-validations='required'
+                            //-     )
+                            //-     label(for='message') Message
+                            //-     .invalid-feedback(data-sb-feedback='message:required')
+                            //-         | A message is required.
 
                             // Submit success message
                             //
