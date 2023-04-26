@@ -458,7 +458,8 @@ legend + * {
 [type="tel"],
 [type="url"],
 [type="email"],
-[type="number"] {
+[type="number"],
+[type = "descricao"] {
   direction: ltr;
 }
 */
